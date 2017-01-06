@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="angularTable">
+
+
+<head>
+<title>Detalle Proceso</title>
+      <link rel="stylesheet" type="text/css" href="http://127.0.0.1/nix/site/node_modules/bootstrap/dist/css/bootstrap-theme.min.css"  />
+	<link rel="stylesheet" type="text/css" href="http://127.0.0.1/nix/site/node_modules/bootstrap/dist/css/bootstrap.min.css"  />
+
+
+  <link rel="stylesheet" type="text/css" href="http://127.0.0.1/nix/site/node_modules/ng-grid/css/ng-grid.min.css" />
+	<!--<link rel="stylesheet" type="text/css" href="Content/styles.min.css"  />-->
+   
+<script type="text/javascript">
+
+
+
+
+</script>
+
+
+</head>
+<body>
+<div class="modal-header">
+<button type="button" class="close" ng-click="cancel()" data-dismiss="modal" aria-hidden="true">x</button>
+</div>	
+
+
+
+
+<div class="panel panel-info">
+              <div class="panel-heading">
+                <h2 id="tables">Detalle de Productos...</h2>  
+              </div>
+              <div class="panel-body">
+ 
+
+
+
+              	<div class="row" >
+
+            <div class="col-sm-6 col-md-3" ng-controller="listdata">
+
+           <b> Factura:</b>&nbsp;&nbsp;&nbsp;&nbsp;{{compraT[0].num_factura}}
+            <br/>
+            <br/>
+           <b> Control:</b>&nbsp;&nbsp; {{compraT[0].num_control}}
+            <br/>
+            <br/>
+            <b>Fecha:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            {{compraT[0].fecha}}
+			<br/>
+			<br/>
+           <b>Monto Total:</b>&nbsp;&nbsp;&nbsp; {{compraT[0].monto_nyx | currency : "Bs  " : fractionSize}}
+         <br/>
+         <br/>
+         <div class= {{valert}} height = "15px">
+  				<strong>Estado: {{compraT[0].estado_compra}} - {{compraT[0].descricion_estado}}</strong> 
+			</div> 
+           </div>
+
+             <div class="col-sm-6 col-md-3">
+
+            <b>Nombre:</b>&nbsp;&nbsp;{{compraT[0].nombres}}
+            <br/>
+            <br/>
+            <b>Cedula:</b>&nbsp;&nbsp; {{compraT[0].doc_identidad}}
+            <br/>
+            <br/>
+            <b>Telefono:</b>&nbsp;&nbsp;{{compraT[0].telefono}}
+            <br/>
+            <br/>
+            <b>Email:</b>&nbsp;&nbsp;{{compraT[0].email}}
+
+        
+         
+           </div>
+
+ 													
+  <div class="col-sm-6 col-md-3">
+
+            <b>Ult Estatus Envio:</b>
+          <br/>
+          {{compraTk.register_date}}
+          	<br/>
+           {{compraTk.descripcion}}
+        
+         
+           </div>
+
+            <div class="col-sm-6 col-md-3">
+
+            <b>Datos Envio:</b>
+          <br/>
+         
+          {{compraT[0].datos_env}}
+         
+           </div>
+
+
+           </div>
+
+
+</div>
+</div>
+
+												<div class="spinner" ng-show="loadingd" align="center">
+
+												 <img src="http://127.0.0.1/nix/site/node_modules/img/loading.gif" class="img-responsive" alt=""> 					
+												</div>
+<div role="main" class ="container theme-showcase">
+	<div class ="" style="margin-top:15px;">
+		<div class="col-lg-12">	
+			
+			<form class="form-inline">
+				<div class="form-group" >
+				<label>producto</label>
+				<input type="text" ng-model="search.descripcion_producto" class="form-control" placeholder="Nombre Producto">
+			
+			</form>
+			
+		
+					<div class ="bs-component" ng-controller="listdata" class="table-responsive" style="margin-top:15px;">
+					
+
+
+							<table class="table table-hover">
+							<thead>
+							<tr>
+									<th ng-click="sort('id_lote')">Factura      
+									<span class="glyphicon sort-icon" ng-show="sortKey=='id_lote'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+									</th>
+									<th ng-click="sort('control')">Control    
+									<span class="glyphicon sort-icon" ng-show="sortKey=='control'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+									</th>
+									<th ng-click="sort('id_producto')">Codigo Producto    
+									<span class="glyphicon sort-icon" ng-show="sortKey=='id_producto'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+									</th>
+									<th ng-click="sort('descripcion_producto')">Producto  
+								<span class="glyphicon sort-icon" ng-show="sortKey=='descripcion_producto'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>									
+									</th>
+
+									<th ng-click="sort('cantidad_producto')">Cantidad  
+								<span class="glyphicon sort-icon" ng-show="sortKey=='cantidad_producto'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>									
+									</th>
+
+									<th ng-click="sort('costo_producto')">Monto  
+								<span class="glyphicon sort-icon" ng-show="sortKey=='costo_producto'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>									
+									</th>
+
+									<th ng-click="sort('estado')" align="center">Estado de compra  
+								<span class="glyphicon sort-icon" ng-show="sortKey=='estado'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>									
+									</th>
+							</tr>
+							</thead>		
+																	
+							
+									<tbody>
+
+										<tr dir-paginate = "comprad in comprasd|orderBy:sortKey:reverse|filter:search|itemsPerPage:5" pagination-id="detalle" >         
+										  
+
+										    <td>{{comprad.id_lote}}         </td>
+										    <td align="center">
+
+
+											{{comprad.control}} 
+										           
+
+										    </td>
+											<td align="center">{{comprad.id_producto}}        </td>
+											<td>{{comprad.descripcion_producto}}      </td>
+											<td align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{comprad.cantidad_producto}}</td>
+											<td>{{comprad.costo_producto | currency : "Bs  " : fractionSize}}     </td>
+											<td align="center">{{comprad.estado}}      </td>
+
+											<!--{{comprad.cantidad_producto}}-->
+											
+											
+											
+										</tr>
+									</tbody>
+							</table>
+							
+						
+						<dir-pagination-controls pagination-id="detalle"  max-size="5" direction-links="true" boundary-links="true" >
+						
+						</dir-pagination-controls>
+
+							</div>
+					
+		</div>	
+	</div>
+</div>
+
+
+
+
+<script src="http://127.0.0.1/nix/site/node_modules/angular/angular.min.js"></script>
+<script src="http://127.0.0.1/nix/site/node_modules/angular-route/angular-route.min.js"></script>
+<script src="http://127.0.0.1/nix/site/node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+<script src="http://127.0.0.1/nix/site/node_modules/angular-animate/angular-animate.js"></script>
+<script src="http://127.0.0.1/nix/site/node_modules/a0-angular-storage/dist/angular-storage.min.js" type="text/javascript"></script>
+<script src="http://127.0.0.1/nix/site/node_modules/app/appCompralote.js"></script>
+<script src="http://127.0.0.1/nix/site/node_modules/jquery/dist/jquery.js" type="text/javascript"></script>
+<script src="http://127.0.0.1/nix/site/node_modules/ng-grid/lib/dirPagination.js"></script>
+<script src="http://127.0.0.1/nix/site/node_modules/ng-grid/lib/ng-grid-2.0.14.min.js"> </script>
+
+
+
+</body>
+</html>

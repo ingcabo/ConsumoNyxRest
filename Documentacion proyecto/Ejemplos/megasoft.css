@@ -1,0 +1,210 @@
+BODY	
+{
+	font-family: Verdana;
+	font-size: 12px;
+	background-color: white;
+}
+
+H2 
+{
+	font-family: Verdana;
+	font-size: 16px;
+    font-weight: bold;
+}
+
+H3 
+{
+	font-family: Verdana;
+	font-size: 14px;
+    font-weight: bold;        
+}
+
+A
+{
+	font-family: Verdana;
+	font-size: 11px;
+}
+
+A:link 
+{
+	color: #001692;
+}
+
+A:visited 
+{
+	color: #001692;
+}
+
+A:hover 
+{
+	color: #001692;
+}
+
+P 
+{
+	font-family: Verdana;
+	font-size: 12px;
+}
+
+TH 
+{
+	font-family: Verdana;
+	font-size: 11px;
+}
+
+TD 
+{
+	font-family: Verdana;
+	font-size: 11px;
+}
+
+.fontBar
+{
+	font-family: Verdana;
+	font-size: 10px;
+	color: white;
+    font-weight: bold;
+}
+
+.smallText 
+{
+	font-size: 10px;
+}
+
+.formCaption
+{
+	background-color: #2D7E59;
+}
+
+.formCaptionText
+{
+	color: white;
+}
+
+.formLabel
+{
+  font-size: 12px;
+  padding-left: 5px;
+}
+
+.formLabel1
+{
+  font-family: Verdana;
+  font-size: 11px;
+  padding-left: 5px;
+}
+
+.inputControl
+{
+  font-family: Courier New;
+  font-size: 12px;
+}
+
+.inputControlAmount
+{
+  font-family: Courier New;
+  font-size: 12px;
+  text-align: right; 
+}
+
+.formElement
+{
+	background-color: #EFEFED;
+}
+
+.tableHeader
+{
+        background-color: #2D7E59;
+}
+
+.tableHeader1
+{
+    background-color: #2D7E59;
+	color: white;
+}
+
+.tableHeader2
+{
+    background-color: #336699;
+	color: white;
+}
+
+.tableCell
+{
+	background-color: #EFEFED;
+}
+
+.tableCell_1
+{
+	background-color: #9999FF;
+}
+
+.tableCell_2
+{
+	background-color: #99CCFF;
+}
+
+.tableCell_3
+{
+	color: white;
+}
+
+.headerBox
+{ 
+        background-color: #2D7E59;
+        padding-left: 5px;
+}
+
+.headerText
+{
+   	font-family: Verdana;
+  	font-size: 18px;
+        color: white;
+}
+
+input.btn
+{
+   color:#050;
+   font-family: Verdana;
+   font-size: 12px;
+   font-weight: bold;
+   background-color: #EEFFFF;
+   border: 1px solid;
+   border-top-color: #696;
+   border-left-color: #696;
+   border-right-color: #363;
+   border-bottom-color: #363;
+   filter: progid:DXImageTransform.Microsoft.Gradient
+      (GradientType=0,StartColorStr='#EBEBEB',EndColorStr='#C1EBEB');
+}
+
+input.btnhov
+{
+   border-top-color:#c63;
+   border-left-color:#c63;
+   border-right-color:#930;
+   border-bottom-color:#930;
+}
+
+.titulo_verde_bold {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #448C6C;
+}
+
+.titulo_bold {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: gray;
+}
+
+.hidden {
+	position:absolute;
+	left:0px;
+	top:-500px;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}

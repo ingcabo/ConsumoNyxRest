@@ -1,0 +1,19 @@
+Buenas Sra. Betzabeth,
+De parte de la gran familia MegaSoft les deseamos un feliz año 2016…
+La presente es para proseguir con la integración de su página WEB a nuestra pasarela de pagos Payment
+Adjuntamos nuevamente el manual de integración para retomar el proyecto.
+Datos de nuestro ambiente para pruebas en desarrollo:
+
+Afiliación Payment Gateway en desarrollo: 20160502
+URL del pre-registro:
+https://200.71.151.226:8443/payment/action/paymentgatewayuniversal-prereg?cod_afiliacion= 20160502&factura=1265&monto=117.67
+
+La aplicación Web del comercio retornara al navegador del cliente final, una redirección al URL de pago del Payment Gateway (pasarela de pago de muestra): 
+https://200.71.151.226:8443/payment/action/paymentgatewayuniversal-data?control=000514
+Validar que trae consigo el numero de control (validar manejo de numero de control en el manual del Payment)
+El URL de verificación se presenta en el siguiente formato (según manual de especificaciones técnica):
+https://200.71.151.226:8443/payment/action/paymentgatewayuniversal-querystatus?control=000514
+Deben suministrar el URL de retorno la cual debe ser semejante al siguiente ejemplo:
+https://www.ejemplo.com/Respuesta.aspx?control=@control@
+donde @control@ es la variable que hace referencia al numero de control de la transacción.
+Adicionalmente deben suministrar para su configuración, el Header (extracto código html), el Footer (extracto código html) y la hoja de estilo (archivo .css debido a que es lo único que almacenamos en cuanto a gráficos), que van a estar relacionadas con el formulario:

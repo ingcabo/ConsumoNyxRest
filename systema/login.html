@@ -1,0 +1,30 @@
+<section id="login">
+
+   
+
+<div class="container" ng-controller="loginCtrl">
+
+      <form class="form-signin" role="form" name="loginForm" id="login-form" ng-submit="login(user)" autocomplete="off">
+        <h2 class="form-signin-heading">Inicio de Sesion Nyx</h2>
+        <label for="username" class="sr-only">Email address</label>
+        <input type="text" id="username" class="form-control" ng-model="user.username" id="username" placeholder="username" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" ng-model="user.password" name="password" id="password"  class="form-control" placeholder="Password" required>
+        <div>
+          <label>
+           
+           {{mensajerest}}
+
+          </label>
+        </div>
+        
+        <input class="btn btn-lg btn-primary btn-block" type="submit" id="btn-login" class="btn btn-custom btn-lg btn-block" value="Log in">
+        
+      </form>
+
+    </div> <!-- /container -->
+
+
+
+
+</section>

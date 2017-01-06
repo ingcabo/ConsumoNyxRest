@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="angularTable">
+
+
+<head>
+<title>Detalle Traking</title>
+    <link rel="stylesheet" type="text/css" href="http://127.0.0.1/nix/site/node_modules/bootstrap/dist/css/bootstrap-theme.min.css"  />
+	<link rel="stylesheet" type="text/css" href="http://127.0.0.1/nix/site/node_modules/bootstrap/dist/css/bootstrap.min.css"  />
+
+
+  <link rel="stylesheet" type="text/css" href="http://127.0.0.1/nix/site/node_modules/ng-grid/css/ng-grid.min.css" />
+	<!--<link rel="stylesheet" type="text/css" href="Content/styles.min.css"  />-->
+   
+<script type="text/javascript">
+
+
+
+
+</script>
+
+
+</head>
+<body>
+<div class="modal-header">
+<button type="button" class="close" ng-click="cancel()" data-dismiss="modal" aria-hidden="true">x</button>
+</div>	
+
+
+
+
+<div class="panel panel-info">
+              <div class="panel-heading">
+                <h2 id="tables">Detalle de Traking</h2>  
+              </div>
+              <div class="panel-body">
+ 
+
+
+
+              	<div class="row" >
+
+            <div class="col-sm-6 col-md-3" ng-controller="listdata">
+
+           <b> Factura:</b>&nbsp;&nbsp;&nbsp;&nbsp;{{compraT[0].num_factura}}
+
+            <br/>
+            <br/>
+           <b> Conrtrol:</b>&nbsp;&nbsp; {{compraT[0].num_control}}
+            <br/>
+            <br/>
+            <b>Fecha:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            {{compraT[0].fecha}}
+			<br/>
+			<br/>
+           <b>Monto Total:</b>&nbsp;&nbsp;&nbsp; {{compraT[0].monto_nyx | currency : "Bs  " : fractionSize}}
+         <br/>
+         <br/>
+         <div class= {{valert}} height = "15px">
+  				<strong>Estado: {{compraT[0].estado_compra}}</strong> 
+			</div>
+           </div>
+
+             <div class="col-sm-6 col-md-3">
+
+            <b>Nombre:</b>&nbsp;&nbsp;{{compraT[0].nombres}}
+            <br/>
+            <br/>
+            <b>Cedula:</b>&nbsp;&nbsp; {{compraT[0].doc_identidad}}
+            <br/>
+            <br/>
+            <b>Telefono:</b>&nbsp;&nbsp;{{compraT[0].telefono}}
+            <br/>
+            <br/>
+            <b>Email:</b>&nbsp;&nbsp;{{compraT[0].email}}
+
+        
+         
+           </div>
+
+ 													
+ 
+
+            <div class="col-sm-6 col-md-3">
+
+            <b>Datos Envio:</b>
+          <br/>
+         
+          {{compraT[0].datos_env}}
+         
+           </div>
+
+
+           </div>
+
+
+</div>
+</div>
+
+												<div class="spinner" ng-show="loadingt" align="center">
+
+												 <img src="http://127.0.0.1/nix/site/node_modules/img/loading.gif" class="img-responsive" alt=""> 					
+												</div>
+<div role="main" class ="container theme-showcase">
+	<div class ="" style="margin-top:15px;">
+		<div class="col-lg-12">	
+			
+		
+			
+			<form>
+			<div class="table-responsive" >
+			<table class="table" >
+			<tr>
+			<td class="col-xs-6 col-sm-4 col-lg-4">	
+				<label> </label>
+				<input type="text" ng-model="item.empresa_env" class="form-control" placeholder="Nombre Empresa">
+
+
+
+			</td>
+			<td class="col-xs-12 col-sm-6 col-lg-8">	
+				<label> </label>
+				<input type="text" ng-model="item.descripcion" class="form-control" placeholder="descripcion">
+			</td>
+
+			<td class="col-xs-12 col-sm-2 col-lg-8">
+					<label> </label>
+					<button type="button" class="btn btn-primary btn-md" ng-click="salvartraking()">Guardar</button>
+			</td>		
+			</tr>
+			</table>
+			</div>
+			</form>
+
+											<div class="spinner" ng-show="loadingt1" align="center">
+
+												 <img src="http://127.0.0.1/nix/site/node_modules/img/loading.gif" class="img-responsive" alt=""> 					
+												</div>
+		
+					<div class ="bs-component" ng-controller="listdata" class="table-responsive" style="margin-top:15px;">
+					
+<!--class="table-striped table-hower"-->
+
+							<table class="table table-hover">
+							<thead>
+							<tr>
+									<th ng-click="sort('register_date')">register_date      
+									<span class="glyphicon sort-icon" ng-show="sortKey=='register_date'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+									</th>
+									<th ng-click="sort('empresa_env')">empresa    
+									<span class="glyphicon sort-icon" ng-show="sortKey=='empresa_env'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+									</th>
+									<th ng-click="sort('descripcion')">descripcion    
+									<span class="glyphicon sort-icon" ng-show="sortKey=='descripcion'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+									</th>
+									<th ng-click="sort('responsable')">responsable  
+								<span class="glyphicon sort-icon" ng-show="sortKey=='responsable'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>									
+									</th>
+
+
+								
+							</tr>
+							</thead>		
+																	
+							
+									<tbody>
+
+										<tr dir-paginate = "traking in trakings|orderBy:sortKey:reverse|filter:search3|itemsPerPage:3" pagination-id="traking" >         
+										  
+
+										    <td>{{traking.register_date}}         </td>
+										    <td align="center">
+
+
+											{{traking.empresa_env}} 
+										           
+
+										    </td>
+											<td align="center">{{traking.descripcion}}        </td>
+
+
+											<td>{{traking.responsable}}      </td>
+											
+
+
+											
+											
+											
+										</tr>
+									</tbody>
+							</table>
+							
+						
+						<dir-pagination-controls pagination-id="traking"  max-size="5" direction-links="true" boundary-links="true" >
+						
+						</dir-pagination-controls>
+
+							</div>
+					
+		</div>	
+	</div>
+</div>
+
+
+
+
+<script src="http://127.0.0.1/nix/site/node_modules/angular/angular.min.js"></script>
+<script src="http://127.0.0.1/nix/site/node_modules/angular-route/angular-route.min.js"></script>
+<script src="http://127.0.0.1/nix/site/node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+<script src="http://127.0.0.1/nix/site/node_modules/angular-animate/angular-animate.js"></script>
+<script src="http://127.0.0.1/nix/site/node_modules/a0-angular-storage/dist/angular-storage.min.js" type="text/javascript"></script>
+<script src="http://127.0.0.1/nix/site/node_modules/app/appCompralote.js"></script>
+<script src="http://127.0.0.1/nix/site/node_modules/jquery/dist/jquery.js" type="text/javascript"></script>
+<script src="http://127.0.0.1/nix/site/node_modules/ng-grid/lib/dirPagination.js"></script>
+<script src="http://127.0.0.1/nix/site/node_modules/ng-grid/lib/ng-grid-2.0.14.min.js"> </script>
+
+
+
+</body>
+</html>

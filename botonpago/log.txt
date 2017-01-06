@@ -1,0 +1,105 @@
+******INICIO******
+insertar compra
+lote:{"nombres":"carlos david","email":"ingcabo@gmail.com","telefono":"04120759318","doc_identidad":"v15839590","datos_env":"bien lejos","monto_total":"76700"}
+detalle compra:
+[{"descripcion_producto":"Matte Lipstick - SHOCKING PINK (MLS02)","cantidad_producto":2,"costo_producto":"23000","total_lote":76700,"img":"MLS.PRODUCTO..png","tono":"SHOCKING PINK (MLS02)","id_producto":"800897143688","variation_id":769,"guid":"http:\/\/nyxvzla.com\/site\/\/?post_type=product&#038;p=763"},{"descripcion_producto":"Super Fat Eye Marker - Carbon Black","cantidad_producto":3,"costo_producto":"53700","total_lote":"76700","img":"SFEM1.jpg","tono":"","id_producto":878,"variation_id":878,"guid":null}]
+enviar email a:ingcabo@gmail.com
+Respuesta numero lote:816
+PaginaWeb: Llegando a nuestro servidor
+Control: 249078639392
+URL de petici車n de XML: https://e-payment.megasoft.com.ve/payment/action/paymentgatewayuniversal-querystatus?control=249078639392
+Obteniendo Login
+Datos a enviar:
+URL:https://e-payment.megasoft.com.ve/payment/action/paymentgatewayuniversal-querystatus?control=249078639392 USERNAME: lcarquez PASSWORD: N#yxBen81
+que dice el preregistro
+que dice el preregistro respuesta: ERROR -> 60: SSL certificate problem: self signed certificate in certificate chain
+resultado en formato json: false
+llamando a funcion para ingreso de compra: 
+respuesta ingreso xml en nyx: HTTP ERROR -> 302
+respuesta ingreso de pago en nyx: 
+respuesta:HTTP ERROR -> 302 
+PaginaWeb: Llegando a nuestro servidor
+Control: 213599136890
+URL de petici車n de XML: https://e-payment.megasoft.com.ve/payment/action/paymentgatewayuniversal-querystatus?control=213599136890
+Obteniendo Login
+Datos a enviar:
+URL:https://e-payment.megasoft.com.ve/payment/action/paymentgatewayuniversal-querystatus?control=213599136890 USERNAME: lcarquez PASSWORD: N#yxBen81
+que dice el preregistro
+que dice el preregistro respuesta: ERROR -> 60: SSL certificate problem: self signed certificate in certificate chain
+resultado en formato json: false
+llamando a funcion para ingreso de compra: 
+respuesta ingreso xml en nyx: HTTP ERROR -> 302
+respuesta ingreso de pago en nyx: 
+respuesta:HTTP ERROR -> 302 
+PaginaWeb: Llegando a nuestro servidor
+Control: 213599136890
+URL de petici車n de XML: https://e-payment.megasoft.com.ve/payment/action/paymentgatewayuniversal-querystatus?control=213599136890
+Obteniendo Login
+Datos a enviar:
+URL:https://e-payment.megasoft.com.ve/payment/action/paymentgatewayuniversal-querystatus?control=213599136890 USERNAME: lcarquez PASSWORD: N#yxBen81
+que dice el preregistro
+que dice el preregistro respuesta: ERROR -> 60: SSL certificate problem: self signed certificate in certificate chain
+resultado en formato json: false
+llamando a funcion para ingreso de compra: 
+respuesta ingreso xml en nyx: HTTP ERROR -> 302
+respuesta ingreso de pago en nyx: 
+respuesta:HTTP ERROR -> 302 
+PaginaWeb: Llegando a nuestro servidor
+Control: 213599136890
+URL de petici車n de XML: https://e-payment.megasoft.com.ve/payment/action/paymentgatewayuniversal-querystatus?control=213599136890
+Obteniendo Login
+Datos a enviar:
+URL:https://e-payment.megasoft.com.ve/payment/action/paymentgatewayuniversal-querystatus?control=213599136890 USERNAME: lcarquez PASSWORD: N#yxBen81
+que dice el preregistro
+que dice el preregistro respuesta: ERROR -> 60: SSL certificate problem: self signed certificate in certificate chain
+resultado en formato json: false
+llamando a funcion para ingreso de compra: 
+respuesta ingreso xml en nyx: HTTP ERROR -> 302
+respuesta ingreso de pago en nyx: 
+respuesta:HTTP ERROR -> 302 
+PaginaWeb: Llegando a nuestro servidor
+Control: 213599136890
+URL de petici車n de XML: https://e-payment.megasoft.com.ve/payment/action/paymentgatewayuniversal-querystatus?control=213599136890
+Obteniendo Login
+Datos a enviar:
+URL:https://e-payment.megasoft.com.ve/payment/action/paymentgatewayuniversal-querystatus?control=213599136890 USERNAME: lcarquez PASSWORD: N#yxBen81
+que dice el preregistro
+que dice el preregistro respuesta: ERROR -> 60: SSL certificate problem: self signed certificate in certificate chain
+resultado en formato json: {"control":"213599136890","cod_afiliacion":"20160705","factura":"777","monto":"650000","estado":"A","codigo":"00","descripcion":"APROBADO","vtid":"00004002","seqnum":"2","authid":"453589","authname":"P-EComCorpBanca","tarjeta":{},"referencia":"000002","terminal":"00004002","lote":"1","rifbanco":"J-00064359-8","afiliacion":"20160705","voucher":" \n         BOD BANCO UNIVERSAL\n          RIF J-30061946-0\n          RECIBO DE COMPRA\n             MASTERCARD\n\nBEN & CO\nCARACAS\nRIF:J-2016061-6\nAFILIADO:0075235615\nTERMINAL:00004002 LOTE:1\n554395******7160\nFECHA:25\/07\/2016 HORA:18:56:28\nAPROB:453589 REF:000002\nTRACE:3\nCAJA :BENCO02\nSECUENCIA:2\n<UT>      ** DUPLICADO ** <\/UT>\n\n   MONTO      BS. 6.500,00\n\n\nME OBLIGO A PAGAR AL BANCO EMISOR\nDE ESTA TARJETA EL MONTO DE ESTA \nNOTA DE CONSUMO\n\n"}
+llamando a funcion para ingreso de compra: 
+respuesta ingreso xml en nyx: HTTP ERROR -> 302
+respuesta ingreso de pago en nyx: 
+respuesta:HTTP ERROR -> 302 
+PaginaWeb: Llegando a nuestro servidor
+Control: 213599136890
+URL de petici車n de XML: https://e-payment.megasoft.com.ve/payment/action/paymentgatewayuniversal-querystatus?control=213599136890
+Obteniendo Login
+Datos a enviar:
+URL:https://e-payment.megasoft.com.ve/payment/action/paymentgatewayuniversal-querystatus?control=213599136890 USERNAME: lcarquez PASSWORD: N#yxBen81
+resultado en formato json: {"control":"213599136890","cod_afiliacion":"20160705","factura":"777","monto":"650000","estado":"A","codigo":"00","descripcion":"APROBADO","vtid":"00004002","seqnum":"2","authid":"453589","authname":"P-EComCorpBanca","tarjeta":{},"referencia":"000002","terminal":"00004002","lote":"1","rifbanco":"J-00064359-8","afiliacion":"20160705","voucher":" \n         BOD BANCO UNIVERSAL\n          RIF J-30061946-0\n          RECIBO DE COMPRA\n             MASTERCARD\n\nBEN & CO\nCARACAS\nRIF:J-2016061-6\nAFILIADO:0075235615\nTERMINAL:00004002 LOTE:1\n554395******7160\nFECHA:25\/07\/2016 HORA:18:56:28\nAPROB:453589 REF:000002\nTRACE:3\nCAJA :BENCO02\nSECUENCIA:2\n<UT>      ** DUPLICADO ** <\/UT>\n\n   MONTO      BS. 6.500,00\n\n\nME OBLIGO A PAGAR AL BANCO EMISOR\nDE ESTA TARJETA EL MONTO DE ESTA \nNOTA DE CONSUMO\n\n"}
+llamando a funcion para ingreso de compra: 
+respuesta ingreso xml en nyx: HTTP ERROR -> 302
+respuesta ingreso de pago en nyx: 
+respuesta:HTTP ERROR -> 302 
+PaginaWeb: Llegando a nuestro servidor
+Control: 213599136890
+URL de petici車n de XML: https://e-payment.megasoft.com.ve/payment/action/paymentgatewayuniversal-querystatus?control=213599136890
+Obteniendo Login
+Datos a enviar:
+URL:https://e-payment.megasoft.com.ve/payment/action/paymentgatewayuniversal-querystatus?control=213599136890 USERNAME: lcarquez PASSWORD: N#yxBen81
+resultado en formato json: {"control":"213599136890","cod_afiliacion":"20160705","factura":"777","monto":"650000","estado":"A","codigo":"00","descripcion":"APROBADO","vtid":"00004002","seqnum":"2","authid":"453589","authname":"P-EComCorpBanca","tarjeta":{},"referencia":"000002","terminal":"00004002","lote":"1","rifbanco":"J-00064359-8","afiliacion":"20160705","voucher":" \n         BOD BANCO UNIVERSAL\n          RIF J-30061946-0\n          RECIBO DE COMPRA\n             MASTERCARD\n\nBEN & CO\nCARACAS\nRIF:J-2016061-6\nAFILIADO:0075235615\nTERMINAL:00004002 LOTE:1\n554395******7160\nFECHA:25\/07\/2016 HORA:18:56:28\nAPROB:453589 REF:000002\nTRACE:3\nCAJA :BENCO02\nSECUENCIA:2\n<UT>      ** DUPLICADO ** <\/UT>\n\n   MONTO      BS. 6.500,00\n\n\nME OBLIGO A PAGAR AL BANCO EMISOR\nDE ESTA TARJETA EL MONTO DE ESTA \nNOTA DE CONSUMO\n\n"}
+llamando a funcion para ingreso de compra: 
+respuesta ingreso xml en nyx: HTTP ERROR -> 302
+respuesta ingreso de pago en nyx: 
+respuesta:HTTP ERROR -> 302 
+PaginaWeb: Llegando a nuestro servidor
+Control: 213599136890
+URL de petici車n de XML: https://e-payment.megasoft.com.ve/payment/action/paymentgatewayuniversal-querystatus?control=213599136890
+Obteniendo Login
+Datos a enviar:
+URL:https://e-payment.megasoft.com.ve/payment/action/paymentgatewayuniversal-querystatus?control=213599136890 USERNAME: lcarquez PASSWORD: N#yxBen81
+resultado en formato json: {"control":"213599136890","cod_afiliacion":"20160705","factura":"777","monto":"650000","estado":"A","codigo":"00","descripcion":"APROBADO","vtid":"00004002","seqnum":"2","authid":"453589","authname":"P-EComCorpBanca","tarjeta":{},"referencia":"000002","terminal":"00004002","lote":"1","rifbanco":"J-00064359-8","afiliacion":"20160705","voucher":" \n         BOD BANCO UNIVERSAL\n          RIF J-30061946-0\n          RECIBO DE COMPRA\n             MASTERCARD\n\nBEN & CO\nCARACAS\nRIF:J-2016061-6\nAFILIADO:0075235615\nTERMINAL:00004002 LOTE:1\n554395******7160\nFECHA:25\/07\/2016 HORA:18:56:28\nAPROB:453589 REF:000002\nTRACE:3\nCAJA :BENCO02\nSECUENCIA:2\n<UT>      ** DUPLICADO ** <\/UT>\n\n   MONTO      BS. 6.500,00\n\n\nME OBLIGO A PAGAR AL BANCO EMISOR\nDE ESTA TARJETA EL MONTO DE ESTA \nNOTA DE CONSUMO\n\n"}
+llamando a funcion para ingreso de compra: 
+respuesta ingreso xml en nyx: HTTP ERROR -> 302
+respuesta ingreso de pago en nyx: 
+respuesta:HTTP ERROR -> 302 
